@@ -1,0 +1,46 @@
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1200px;
+    height: 100vh;
+}
+
+div > div:not(.circle){
+    display:inline-block;
+    height: 0px;
+    width: 300px;
+    border-top-left-radius:150px 47px ;
+    border-top-right-radius:150px 47px ;
+    border-left:75px solid transparent ;
+    border-right: 75px solid transparent;
+    border-top: 200px yellowgreen solid;
+    position: relative;
+}
+
+div > div > p{
+    display: inline-block;
+    width: 100%;
+
+    border-top: 16px white solid;
+    border-top-left-radius:150px 16px ;
+    border-top-right-radius:150px 16px ;
+    position: absolute;
+    z-index: 0;
+}
+
+
+
+
+.circle{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    border: solid 2px blue;
+    border-radius: 50%;
+}
